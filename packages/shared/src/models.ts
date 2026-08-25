@@ -293,27 +293,21 @@ export const MODEL_CATALOG = [
     enabledByDefault: false,
     models: [
       {
-        id: "google-vertex/gemini-2.5-pro",
-        name: "Gemini 2.5 Pro",
-        description: "Gemini 2.5 Pro",
-        reasoning: { efforts: ["none", "low", "medium", "high"], default: "medium" },
-      },
-      {
-        id: "google-vertex/gemini-3.1-pro",
+        id: "google-vertex/gemini-3.1-pro-preview",
         name: "Gemini 3.1 Pro",
         description: "Gemini 3.1 Pro",
         reasoning: { efforts: ["none", "low", "medium", "high"], default: "medium" },
       },
       {
-        id: "google-vertex/gemini-3.5-flash",
-        name: "Gemini 3.5 Flash",
-        description: "Gemini 3.5 Flash",
+        id: "google-vertex/gemini-3.7-flash",
+        name: "Gemini 3.7 Flash",
+        description: "Gemini 3.7 Flash",
         reasoning: { efforts: ["none", "low", "medium", "high"], default: "medium" },
       },
       {
-        id: "google-vertex/gemini-3.1-flash-lite",
-        name: "Gemini 3.1 Flash Lite",
-        description: "Gemini 3.1 Flash Lite",
+        id: "google-vertex/gemini-3.5-flash-lite",
+        name: "Gemini 3.5 Flash-Lite",
+        description: "Gemini 3.5 Flash-Lite",
         reasoning: { efforts: ["none", "low", "medium", "high"], default: "medium" },
       },
       {
