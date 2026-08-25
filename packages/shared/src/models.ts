@@ -237,6 +237,10 @@ export const MODEL_CATALOG = [
       { id: "deepseek/deepseek-v4-pro", name: "DeepSeek V4 Pro", description: "Most capable" },
     ],
   },
+  /**
+   * Anthropic models served via Google Vertex AI.
+   * https://models.dev/providers/google-vertex-anthropic/
+   */
   {
     category: "Vertex AI Anthropic",
     enabledByDefault: false,
@@ -288,6 +292,10 @@ export const MODEL_CATALOG = [
       },
     ],
   },
+  /**
+   * Gemini (and other) models served via Google Vertex AI.
+   * https://models.dev/providers/google-vertex/
+   */
   {
     category: "Vertex AI Gemini",
     enabledByDefault: false,
@@ -318,6 +326,34 @@ export const MODEL_CATALOG = [
           efforts: ["low", "medium", "high", "xhigh", "max"],
           default: "high",
         },
+      },
+    ],
+  },
+  /**
+   * Gemini models served via the Google AI (Gemini API) provider.
+   * https://models.dev/providers/google/
+   */
+  {
+    category: "Google Gemini",
+    enabledByDefault: false,
+    models: [
+      {
+        id: "google/gemini-3.1-pro-preview",
+        name: "Gemini 3.1 Pro",
+        description: "Gemini 3.1 Pro",
+        reasoning: { efforts: ["none", "low", "medium", "high"], default: "medium" },
+      },
+      {
+        id: "google/gemini-3.7-flash",
+        name: "Gemini 3.7 Flash",
+        description: "Gemini 3.7 Flash",
+        reasoning: { efforts: ["none", "low", "medium", "high"], default: "medium" },
+      },
+      {
+        id: "google/gemini-3.5-flash-lite",
+        name: "Gemini 3.5 Flash-Lite",
+        description: "Gemini 3.5 Flash-Lite",
+        reasoning: { efforts: ["none", "low", "medium", "high"], default: "medium" },
       },
     ],
   },
